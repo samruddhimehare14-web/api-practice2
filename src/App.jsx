@@ -120,7 +120,7 @@ function App() {
 
       <form onSubmit={addUser}>
         <div>
-          <label>Name: </label>
+          <label>Username: </label>
 
           <input
             type="text"
