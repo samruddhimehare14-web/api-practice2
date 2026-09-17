@@ -3,7 +3,7 @@ import { useState } from "react";
 function App() {
   const [users, setUsers] = useState([]);
 
-  const [name, setName] = useState("");
+  const [Username, setUsername] = useState("");
   const [email, setEmail] = useState("");
 
   const [message, setMessage] = useState("");
@@ -44,7 +44,7 @@ function App() {
         },
 
         body: JSON.stringify({
-          name: name,
+          Username: Username,
           email: email,
         }),
       }
@@ -64,7 +64,7 @@ function App() {
       setMessage("Something went wrong!");
     }
 
-    setName("");
+    setUsername("");
     setEmail("");
   }
 
@@ -124,8 +124,8 @@ function App() {
 
           <input
             type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+            value={Username}
+            onChange={(e) => setUsername(e.target.value)}
           />
         </div>
 
